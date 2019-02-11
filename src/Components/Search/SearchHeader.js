@@ -1,12 +1,14 @@
 import React from 'react'
 
-const SearchBar = () => {
+const SearchHeader = () => {
     return (
       <form>
+        <h1>Searchable product table</h1>
+        <br/>
         <input placeholder = 'Search product'/>
         <select />
       </form>
     )
 }
 
-export default SearchBar
+export default SearchHeader

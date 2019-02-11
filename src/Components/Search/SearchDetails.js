@@ -1,6 +1,6 @@
 import React from 'react'
 
-class ProductTable extends React.Component {
+class SearchDetails extends React.Component {
     render() {
         return (
             <h2>Hello</h2>
@@ -8,4 +8,4 @@ class ProductTable extends React.Component {
     }
 }
 
-export default ProductTable
+export default SearchDetails

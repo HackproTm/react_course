@@ -1,17 +1,17 @@
 import React, { Component } from 'react'
 import './App.css'
 
-import Title from './Title'
-import SearchBar from './SearchBar'
-import ProductTable from './ProductTable'
+import ModalAdd from './Components/Common/ModalAdd';
+import Search from './Components/Search/Search'
 
 class App extends Component {
   render() {
     return (
       <div className = 'App'>
-        <Title/>
-        <SearchBar/>
-        <ProductTable/>
+        <Search/>
+        <br/>
+        <ModalAdd/>
+        <hr/>
       </div>
     );
   }
