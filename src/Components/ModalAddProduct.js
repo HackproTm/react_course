@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import Draggable from 'react-draggable';
 
 import Button from '@material-ui/core/Button';
 import Dialog from '@material-ui/core/Dialog';
@@ -10,7 +9,6 @@ import FormControl from '@material-ui/core/FormControl';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import FormGroup from '@material-ui/core/FormGroup';
 import MenuItem from '@material-ui/core/MenuItem';
-import Paper from '@material-ui/core/Paper';
 import Switch from '@material-ui/core/Switch';
 import TextField from '@material-ui/core/TextField';
 import { withStyles } from '@material-ui/core/styles';
@@ -70,8 +68,7 @@ class ModalAddProduct extends Component {
 
     return (
       <Dialog open={this.props.isModalNewProductOpen}
-              onClose={this.handleClose}
-              PaperComponent={this.paperComponent}>
+              onClose={this.handleClose}>
         <DialogTitle className={classes.titleModal}>Add New Product</DialogTitle>
         <DialogContent className={classes.modal}>
           <FormControl component='fieldset' className={classes.container}>
@@ -210,14 +207,6 @@ class ModalAddProduct extends Component {
       [name]: event.target.checked
     });
   };
-
-  paperComponent = (props) => {
-    return (
-      <Draggable>
-        <Paper {...props} />
-      </Draggable>
-    );
-  }
 }
 
 export default withStyles(styles)(ModalAddProduct);
